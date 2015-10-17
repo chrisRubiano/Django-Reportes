@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import Reparacion,Calibracion
 
-# Register your models here.
+admin.site.register(Reparacion)
+admin.site.register(Calibracion)
+
