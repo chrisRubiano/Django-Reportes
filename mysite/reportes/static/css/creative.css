@@ -10,6 +10,14 @@ body {
     height: 100%;
 }
 
+.form{
+    padding-top: 50px;
+}
+
+label{
+    color: #fff;
+}
+
 body {
     font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
     /*background-color: #3E606F;*/
