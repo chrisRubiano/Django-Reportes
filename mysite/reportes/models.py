@@ -10,6 +10,10 @@ class Reparacion(models.Model):
 	observaciones = models.TextField('observaciones', blank=True, null=True)
 	costo = models.DecimalField('Costo (MXN)', max_digits=5, decimal_places=2)
 
+	class Meta:
+		verbose_name = "Reparacion"
+        verbose_name_plural = "Reparaciones"
+
 	def __str__(self):
 		return str(self.fecha)
 		pass
@@ -23,6 +27,10 @@ class Calibracion(models.Model):
 	nombreEncargado = models.CharField('Encargado del area', max_length=80)
 	observaciones = models.TextField('Observaciones', blank=True, null=True)
 	costo = models.DecimalField('Costo (MXN)', max_digits=5, decimal_places=2)
+
+	class Meta:
+		verbose_name = "Calibracion"
+        verbose_name_plural = "Calibraciones"
 
 	def __str__(self):
 		return str(self.fecha)
