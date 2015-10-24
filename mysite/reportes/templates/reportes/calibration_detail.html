@@ -1,0 +1,20 @@
+{% extends "reportes/base.html" %}
+
+{% block content %}
+    <div class="reporte">
+        
+            <div class="date">
+                {{ calibracion.fecha }}
+            </div>
+        
+        <h1>{{ calibracion.cliente }}</h1>
+        <hr>
+        <p><span>Observaciones de {{ calibracion.numeroSerie }}:</span>{{ calibracion.observaciones|linebreaks }}</p>
+        <hr>
+        <p><span>Tecnico Responsable: </span>{{ calibracion.nombreTecnico }}</p>
+        <hr>
+        <p><span>Encargado de area: </span>{{ calibracion.nombreEncargado }}</p>
+        <hr>
+        <p><span>Cotizacion: </span>${{ calibracion.costo }}</p>
+    </div>
+{% endblock %}

@@ -40,3 +40,7 @@ def report_detail(request, pk):
 def calibration_list(request):
     calibraciones = Calibracion.objects.filter(fecha__lte=timezone.now()).order_by('-fecha')
     return render(request, 'reportes/calibration_list.html', {'calibraciones': calibraciones})
+
+def calibration_detail(request, pk):
+    calibracion = get_object_or_404(Calibracion, pk=pk)
+    return render(request, 'reportes/calibration_detail.html', {'calibracion': calibracion})

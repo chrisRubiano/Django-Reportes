@@ -6,7 +6,7 @@
             <div class="date">
                 {{ calibracion.fecha }}
             </div>
-            <h1>{{ calibracion.cliente }}</h1>
+            <h1><a href="{% url "reportes.views.calibration_detail" pk=calibracion.pk %}">{{ calibracion.cliente }}</a></h1>
             <h3 class="nserie">{{ calibracion.numeroSerie }}</h3>
             <p class="observaciones">{{ calibracion.observaciones|linebreaks }}</p>
         </div>
