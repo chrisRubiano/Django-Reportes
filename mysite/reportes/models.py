@@ -4,7 +4,7 @@ from django.utils import timezone
 #Modelo para guardar los reportes de reparacion
 class Reparacion(models.Model):
 	fecha = models.DateField('Fecha', default=timezone.now)
-	cliente = models.CharField(, max_length=64),
+	cliente = models.CharField('Cliente', max_length=64, null=True)
 	numeroSerie = models.CharField('Numero de Serie', max_length=36)
 	nombreTecnico = models.CharField('Tecnico responsable', max_length=80)
 	nombreEncargado = models.CharField('Encargado del area', max_length=80)
@@ -22,7 +22,7 @@ class Reparacion(models.Model):
 #Modelo para guardar los reportes de calibracion
 class Calibracion(models.Model):
 	fecha = models.DateField('Fecha', default=timezone.now)
-	cliente = models.CharField(, max_length=50)
+	cliente = models.CharField('Cliente', max_length=50, null=True)
 	sigCalibracion = models.DateField('Siguiente Calibracion', )
 	numeroSerie = models.CharField('Numero de Serie', max_length=36)
 	nombreTecnico = models.CharField('Tecnico responsable', max_length=80)

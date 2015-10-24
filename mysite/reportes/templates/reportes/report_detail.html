@@ -1,0 +1,20 @@
+{% extends "reportes/base.html" %}
+
+{% block content %}
+    <div class="reporte">
+        
+            <div class="date">
+                {{ reparacion.fecha }}
+            </div>
+        
+        <h1>{{ reparacion.cliente }}</h1>
+        <hr>
+        <p><span>Observaciones de {{ reparacion.numeroSerie }}:</span>{{ reparacion.observaciones|linebreaks }}</p>
+        <hr>
+        <p><span>Tecnico Responsable: </span>{{ reparacion.nombreTecnico }}</p>
+        <hr>
+        <p><span>Encargado de area: </span>{{ reparacion.nombreEncargado }}</p>
+        <hr>
+        <p><span>Cotizacion: </span>${{ reparacion.costo }}</p>
+    </div>
+{% endblock %}

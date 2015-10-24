@@ -6,9 +6,11 @@
             <div class="date">
                 {{ reparacion.fecha }}
             </div>
-            <h1>{{ reparacion.numeroSerie }}</h1>
+            <h1><a href="{% url "reportes.views.report_detail" pk=reparacion.pk %}">{{ reparacion.cliente }}</a></h1>
+            <h3 class="nserie">{{ reparacion.numeroSerie }}</h3>
             <p class="observaciones">{{ reparacion.observaciones|linebreaks }}</p>
         </div>
+        <hr>
     {% endfor %}
 {% endblock content %}
 

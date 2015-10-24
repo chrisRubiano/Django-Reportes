@@ -4,26 +4,55 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+/*!
+* Fuentes para utilizar
+*   font-family: 'Roboto', sans-serif;
+*   font-family: 'Pacifico', cursive;
+*   font-family: 'Raleway', sans-serif;
+*/
+
+
 html,
 body {
     width: 100%;
     height: 100%;
 }
 
+.reporte{
+    padding-top: 50px;
+}
 .form{
     padding-top: 50px;
 }
+.date{
+    color: #fff;
+    font-size: 18px;
+}
+.form p{
+    color: #424242;
+}
+.nserie{
+    color: #919D9E;
+}
+span{
+    font-size: 20px;
+    color: #919D9E;
+}
+
+
+label{
+    color: #fff;
+}
 
 body {
-    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
-    /*background-color: #3E606F;*/
-    background-color: #f05f40;
+    font-family: 'Raleway', sans-serif;
+    background-color: #023554;
 }
 
 hr {
-    max-width: 50px;
-    border-color: #f05f40;
-    border-width: 3px;
+    max-width: 100%;
+    border-color: #ccdee2;
+    border-width: 2px;
 }
 
 hr.light {
@@ -31,7 +60,7 @@ hr.light {
 }
 
 a {
-    color: #f05f40;
+    color: #049DBF;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -39,7 +68,12 @@ a {
 
 a:hover,
 a:focus {
-    color: #eb3812;
+    color: #05c6f1;
+    text-decoration: none;
+}
+
+.errorlist{
+    color: #F24C27;
 }
 
 h1,
@@ -48,17 +82,23 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Raleway', sans-serif;
+    color: #049DBF;
+    padding-bottom: 10px;
 }
 
 p {
     margin-bottom: 20px;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #fff;
+}
+.observaciones{
+    color: #fff;
 }
 
 .bg-primary {
-    background-color: #f05f40;
+    background-color: #023554;
 }
 
 .bg-dark {
@@ -84,7 +124,7 @@ aside {
 
 .navbar-default {
     border-color: rgba(34,34,34,.05);
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Raleway', sans-serif;
     background-color: #fff;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
@@ -93,14 +133,14 @@ aside {
 
 .navbar-default .navbar-header .navbar-brand {
     text-transform: uppercase;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    color: #f05f40;
+    color: #023554;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-    color: #eb3812;
+    color: #37364F;
 }
 
 .navbar-default .nav > li>a,
@@ -113,24 +153,24 @@ aside {
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #f05f40;
+    color: #023554;
 }
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #f05f40!important;
-    background-color: #2A2C2B;
+    color: #023554!important;
+    background-color: transparent;
 }
 
 .navbar-default .nav > li.active>a:hover,
 .navbar-default .nav>li.active>a:focus:hover {
-    background-color: #2A2C2B;
+    background-color: transparent;
 }
 
 @media(min-width:768px) {
     .navbar-default {
-        border-color: rgba(255,255,255,.3);
-        background-color: #2A2C2B;
+        border-color: rgba(255,255,255,.1);
+        background-color: transparent;
     }
 
     .navbar-default .navbar-header .navbar-brand {
@@ -159,12 +199,12 @@ aside {
 
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 14px;
-        color: #f05f40;
+        color: #023554;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #eb3812;
+        color: #37364F;
     }
 
     .navbar-default.affix .nav > li>a,
@@ -174,7 +214,7 @@ aside {
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: #f05f40;
+        color: #023554;
     }
 }
 
@@ -280,7 +320,7 @@ header .header-content .header-content-inner p {
     text-align: center;
     color: #fff;
     opacity: 0;
-    background: rgba(240,95,64,.9);
+    background: rgba(3,101,140,.9);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -297,7 +337,7 @@ header .header-content .header-content-inner p {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     padding: 0 15px;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -329,7 +369,7 @@ header .header-content .header-content-inner p {
 }
 
 .text-primary {
-    color: #f05f40;
+    color: #023554;
 }
 
 .no-gutter > [class*=col-] {
@@ -391,9 +431,9 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-primary {
-    border-color: #f05f40;
+    border-color: #023554;
     color: #fff;
-    background-color: #f05f40;
+    background-color: #023554;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -405,9 +445,9 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-    border-color: #ed431f;
+    border-color: #03658C;
     color: #fff;
-    background-color: #ee4b28;
+    background-color: #03658C;
 }
 
 .btn-primary:active,
@@ -434,20 +474,20 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #f05f40;
-    background-color: #f05f40;
+    border-color: #023554;
+    background-color: #023554;
 }
 
 .btn-primary .badge {
-    color: #f05f40;
+    color: #023554;
     background-color: #fff;
 }
 
 .btn {
     border: 0;
-    border-radius: 300px;
+    border-radius: 3px;
     text-transform: uppercase;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
 }
 

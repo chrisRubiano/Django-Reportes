@@ -1,0 +1,16 @@
+{% extends "reportes/base.html" %}
+
+{% block content %}
+    {% for calibracion in calibraciones %}
+        <div class="reporte">
+            <div class="date">
+                {{ calibracion.fecha }}
+            </div>
+            <h1>{{ calibracion.cliente }}</h1>
+            <h3 class="nserie">{{ calibracion.numeroSerie }}</h3>
+            <p class="observaciones">{{ calibracion.observaciones|linebreaks }}</p>
+        </div>
+        <hr>
+    {% endfor %}
+{% endblock content %}
+

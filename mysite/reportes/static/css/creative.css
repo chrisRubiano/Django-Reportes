@@ -28,8 +28,15 @@ body {
     color: #fff;
     font-size: 18px;
 }
-.observaciones{
-    color: #fff;
+.form p{
+    color: #424242;
+}
+.nserie{
+    color: #919D9E;
+}
+span{
+    font-size: 20px;
+    color: #919D9E;
 }
 
 
@@ -39,14 +46,13 @@ label{
 
 body {
     font-family: 'Raleway', sans-serif;
-    /*background-color: #023554;*/
     background-color: #023554;
 }
 
 hr {
-    max-width: 50px;
-    border-color: #023554;
-    border-width: 3px;
+    max-width: 100%;
+    border-color: #ccdee2;
+    border-width: 2px;
 }
 
 hr.light {
@@ -54,7 +60,7 @@ hr.light {
 }
 
 a {
-    color: #023554;
+    color: #049DBF;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -62,7 +68,8 @@ a {
 
 a:hover,
 a:focus {
-    color: #03658C;
+    color: #05c6f1;
+    text-decoration: none;
 }
 
 .errorlist{
@@ -84,6 +91,9 @@ p {
     margin-bottom: 20px;
     font-size: 18px;
     line-height: 1.6;
+    color: #fff;
+}
+.observaciones{
     color: #fff;
 }
 

@@ -32,3 +32,11 @@ def new_calibration(request):
 def report_list(request):
     reparaciones = Reparacion.objects.filter(fecha__lte=timezone.now()).order_by('-fecha')
     return render(request, 'reportes/report_list.html', {'reparaciones': reparaciones})
+
+def report_detail(request, pk):
+    reparacion = get_object_or_404(Reparacion, pk=pk)
+    return render(request, 'reportes/report_detail.html', {'reparacion': reparacion})
+
+def calibration_list(request):
+    calibraciones = Calibracion.objects.filter(fecha__lte=timezone.now()).order_by('-fecha')
+    return render(request, 'reportes/calibration_list.html', {'calibraciones': calibraciones})
