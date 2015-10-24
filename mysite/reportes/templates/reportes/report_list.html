@@ -1,0 +1,14 @@
+{% extends "reportes/base.html" %}
+
+{% block content %}
+    {% for reparacion in reparaciones %}
+        <div class="reporte">
+            <div class="date">
+                {{ reparacion.fecha }}
+            </div>
+            <h1>{{ reparacion.numeroSerie }}</h1>
+            <p class="observaciones">{{ reparacion.observaciones|linebreaks }}</p>
+        </div>
+    {% endfor %}
+{% endblock content %}
+

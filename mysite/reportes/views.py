@@ -28,3 +28,7 @@ def new_calibration(request):
     else:
         form = CalibracionForm()
     return render(request, 'reportes/new_calibration.html', {'form': form})    
+
+def report_list(request):
+    reparaciones = Reparacion.objects.filter(fecha__lte=timezone.now()).order_by('-fecha')
+    return render(request, 'reportes/report_list.html', {'reparaciones': reparaciones})

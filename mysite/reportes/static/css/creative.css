@@ -18,9 +18,20 @@ body {
     height: 100%;
 }
 
+.reporte{
+    padding-top: 50px;
+}
 .form{
     padding-top: 50px;
 }
+.date{
+    color: #fff;
+    font-size: 18px;
+}
+.observaciones{
+    color: #fff;
+}
+
 
 label{
     color: #fff;
@@ -73,6 +84,7 @@ p {
     margin-bottom: 20px;
     font-size: 18px;
     line-height: 1.6;
+    color: #fff;
 }
 
 .bg-primary {
