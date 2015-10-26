@@ -12,4 +12,4 @@ class CalibracionForm(forms.ModelForm):
 
     class Meta:
         model = Calibracion
-        fields = ('fecha', 'cliente', 'sigCalibracion', 'numeroSerie', 'nombreTecnico', 'nombreEncargado', 'observaciones', 'costo')
+        fields = ('fecha', 'sigCalibracion', 'cliente', 'numeroSerie', 'nombreTecnico', 'nombreEncargado', 'observaciones', 'costo')
