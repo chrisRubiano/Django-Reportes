@@ -1,0 +1,16 @@
+{% extends "reportes/base.html" %}
+
+{% block content %}
+    {% for calibracion in calibraciones %}
+        <div class="reporte">
+            <div class="date"><i class="fa fa-calendar fa-lg"></i> 
+                {{ calibracion.sigCalibracion }}
+            </div>
+            <h2><a href="{% url "reportes.views.calibration_detail" pk=calibracion.pk %}"><i class="fa fa-users fa-lg"></i> {{ calibracion.cliente }}</a></h2>
+            <h3 class="nserie"><i class="fa fa-tag fa-lg"></i> {{ calibracion.numeroSerie }}</h3>
+            <p class="observaciones"><i class="fa fa-pencil-square-o fa-lg">Observaciones de la calibracion anterior: </i>{{ calibracion.observaciones|linebreaks }}</p>
+        </div>
+        <hr>
+    {% endfor %}
+{% endblock content %}
+

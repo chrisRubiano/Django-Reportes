@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="{% static "css/creative.css" %}">
         <!--Fuentes-->
         <link href='https://fonts.googleapis.com/css?family=Roboto|Pacifico|Raleway:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     </head>
     <body>
@@ -46,6 +47,9 @@
                     </li>
                     <li>
                         <a href="{% url "calibration_list" %}"><i class="fa fa-file-text fa-lg"></i> Consultar Calibraciones</a>
+                    </li>
+                    <li>
+                        <a href="{% url "calibration_pending" %}"><i class="fa fa-hourglass-1 fa-lg"></i> Proximas Calibraciones</a>
                     </li>
                 </ul>
             </div>

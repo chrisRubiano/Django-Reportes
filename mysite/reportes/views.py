@@ -44,3 +44,8 @@ def calibration_list(request):
 def calibration_detail(request, pk):
     calibracion = get_object_or_404(Calibracion, pk=pk)
     return render(request, 'reportes/calibration_detail.html', {'calibracion': calibracion})
+
+#esta vista es para las calibraciones pendientes/es codigo copiado de calibration_list
+def calibration_pending(request):
+    calibraciones = Calibracion.objects.filter(fecha__lte=timezone.now()).order_by('fecha')
+    return render(request, 'reportes/calibration_pending.html', {'calibraciones': calibraciones})
