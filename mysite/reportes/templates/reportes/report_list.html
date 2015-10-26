@@ -3,12 +3,12 @@
 {% block content %}
     {% for reparacion in reparaciones %}
         <div class="reporte">
-            <div class="date">
+            <div class="date"><i class="fa fa-calendar fa-lg"></i> 
                 {{ reparacion.fecha }}
             </div>
-            <h1><a href="{% url "reportes.views.report_detail" pk=reparacion.pk %}">{{ reparacion.cliente }}</a></h1>
-            <h3 class="nserie">{{ reparacion.numeroSerie }}</h3>
-            <p class="observaciones">{{ reparacion.observaciones|linebreaks }}</p>
+            <h2><a href="{% url "reportes.views.report_detail" pk=reparacion.pk %}"><i class="fa fa-users fa-lg"></i> {{ reparacion.cliente }}</a></h2>
+            <h3 class="nserie"><i class="fa fa-tag fa-lg"></i> {{ reparacion.numeroSerie }}</h3>
+            <p class="observaciones"><i class="fa fa-pencil-square-o fa-lg"></i> {{ reparacion.observaciones|linebreaks }}</p>
         </div>
         <hr>
     {% endfor %}

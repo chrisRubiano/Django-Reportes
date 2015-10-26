@@ -3,18 +3,18 @@
 {% block content %}
     <div class="reporte">
         
-            <div class="date">
+            <div class="date"><i class="fa fa-calendar fa-lg"></i> 
                 {{ reparacion.fecha }}
             </div>
         
-        <h1>{{ reparacion.cliente }}</h1>
+        <h2><i class="fa fa-users fa-lg"></i> {{ reparacion.cliente }}</h2>
         <hr>
-        <p><span>Observaciones de {{ reparacion.numeroSerie }}:</span>{{ reparacion.observaciones|linebreaks }}</p>
+        <p><span><i class="fa fa-pencil-square-o fa-lg"></i> Observaciones de {{ reparacion.numeroSerie }}:</span>{{ reparacion.observaciones|linebreaks }}</p>
         <hr>
-        <p><span>Tecnico Responsable: </span>{{ reparacion.nombreTecnico }}</p>
+        <p><span><i class="fa fa-user fa-lg"></i> Tecnico Responsable: </span>{{ reparacion.nombreTecnico }}</p>
         <hr>
-        <p><span>Encargado de area: </span>{{ reparacion.nombreEncargado }}</p>
+        <p><span><i class="fa fa-user fa-lg"></i> Encargado de area: </span>{{ reparacion.nombreEncargado }}</p>
         <hr>
-        <p><span>Cotizacion: </span>${{ reparacion.costo }}</p>
+        <p><span><i class="fa fa-credit-card fa-lg"></i> Cotizacion: </span>${{ reparacion.costo }}</p>
     </div>
 {% endblock %}
