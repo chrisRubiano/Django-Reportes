@@ -1,8 +1,11 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, render_to_response
 from django.utils import timezone
 from .models import Reparacion, Calibracion
 from django.shortcuts import redirect
 from .forms import ReparacionForm, CalibracionForm
+from django.contrib.auth import authenticate, login, logout
+from django.http import HttpResponseRedirect, HttpResponse
+from django.template import RequestContext
 
 def inicio(request):
     return render(request, 'reportes/base.html', {})
@@ -49,3 +52,26 @@ def calibration_detail(request, pk):
 def calibration_pending(request):
     calibraciones = Calibracion.objects.filter(fecha__lte=timezone.now()).order_by('fecha')
     return render(request, 'reportes/calibration_pending.html', {'calibraciones': calibraciones})
+
+
+def user_login(request):
+    context = RequestContext(request)
+    if request.method == 'POST':
+        username = request.POST['username']
+        password = request.POST['password']
+        user = authenticate(username=username, password=password)
+        if user:
+            if user.is_active:
+                login(request, user)
+                return HttpResponseRedirect('/')
+            else:
+                return HttpResponse("Your account is disabled.")
+        else:
+            print "Invalid login details: {0}, {1}".format(username, password)
+            return HttpResponse("Usuario/Contrasena incorrectos")
+    else:
+        return render_to_response('reportes/login.html', {}, context)
+
+def user_logout(request):
+    logout(request)
+    return HttpResponseRedirect('/')

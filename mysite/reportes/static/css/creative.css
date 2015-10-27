@@ -38,6 +38,19 @@ span{
     font-size: 20px;
     color: #919D9E;
 }
+.login{
+    padding-top: 100px;
+}
+.input-group{
+    background-color: #03598d;
+    padding: 20px;
+    border-radius: 2px;
+}
+
+.input-group input{
+    margin: 10px;
+    margin-bottom: 10px!important;
+}
 
 
 label{

@@ -1,0 +1,16 @@
+{% extends "reportes/base.html" %}
+
+{% block content %}
+        <form id="login_form" method="post" action="/login/" class="login">
+            {% csrf_token %}
+            <div class="input-group">
+            <label>Usuario: </label> <input type="text" name="username" value="" size="50" class='form-control'/>
+            <br />
+            <label>Contrasena: </label><input type="password" name="password" value="" size="50" class='form-control'/>
+            <br />
+
+            <input type="submit" value="Iniciar Sesion" class="btn btn-default" />
+            </div>
+        </form>
+{% endblock content %}
+
