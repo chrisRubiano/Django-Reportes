@@ -1,11 +1,13 @@
 {% extends "reportes/base.html" %}
 
 {% block content %}
+{% if user.is_authenticated %}
 	<div class="form">
 	    <h2>Reparacion</h1>
 	    <form method="POST" class="report-form">{% csrf_token %}
 	        {{ form.as_p }}
 	        <button type="submit" class="save btn btn-default">Guardar</button>
 	    </form>
-    </div>  
+    </div>
+{% endif %}  
 {% endblock %}

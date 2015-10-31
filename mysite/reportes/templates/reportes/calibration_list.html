@@ -1,6 +1,7 @@
 {% extends "reportes/base.html" %}
 
 {% block content %}
+{% if user.is_authenticated %}
     {% for calibracion in calibraciones %}
         <div class="reporte">
             <div class="date"><i class="fa fa-calendar fa-lg"></i> 
@@ -12,5 +13,6 @@
         </div>
         <hr>
     {% endfor %}
+{% endif %}
 {% endblock content %}
 

@@ -1,6 +1,7 @@
 {% extends "reportes/base.html" %}
 
 {% block content %}
+{% if user.is_authenticated %}
     <div class="reporte">
         
             <div class="date"><i class="fa fa-calendar fa-lg"></i> 
@@ -17,4 +18,5 @@
         <hr>
         <p><span><i class="fa fa-credit-card fa-lg"></i> Cotizacion: </span>${{ calibracion.costo }}</p>
     </div>
+{% endif %}
 {% endblock %}
