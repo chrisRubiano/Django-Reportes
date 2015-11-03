@@ -1,0 +1,7 @@
+{% extends "reportes/base.html" %}
+
+{% block content %}
+{% if user.is_authenticated %}
+    <h2 class="form">Hola {{ user.first_name }} {{ user.last_name }}</h2>
+{% endif %}
+{% endblock %}

@@ -8,7 +8,7 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.template import RequestContext
 
 def inicio(request):
-    return render(request, 'reportes/base.html', {})
+    return render(request, 'reportes/index.html', {})
 
 def new_report(request):
     if request.method == "POST":
