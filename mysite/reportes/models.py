@@ -25,7 +25,7 @@ class Calibracion(models.Model):
 	cliente = models.CharField('Cliente', max_length=50, null=True)
 	sigCalibracion = models.DateField('Siguiente Calibracion', )
 	numeroSerie = models.CharField('Numero de Serie', max_length=36)
-	nombreTecnico = models.CharField('Tecnico responsable', max_length=80, default=User)
+	nombreTecnico = models.CharField('Tecnico responsable', max_length=80)
 	nombreEncargado = models.CharField('Encargado del area', max_length=80)
 	observaciones = models.TextField('Observaciones', blank=True, null=True)
 	costo = models.DecimalField('Costo (MXN)', max_digits=5, decimal_places=2)
