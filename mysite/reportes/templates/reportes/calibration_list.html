@@ -9,7 +9,7 @@
             </div>
             <h2><a href="{% url "reportes.views.calibration_detail" pk=calibracion.pk %}"><i class="fa fa-users fa-lg"></i> {{ calibracion.cliente }}</a></h2>
             <h3 class="nserie"><i class="fa fa-tag fa-lg"></i> {{ calibracion.numeroSerie }}</h3>
-            <p class="observaciones"><i class="fa fa-pencil-square-o fa-lg"></i> {{ calibracion.observaciones|linebreaks }}</p>
+            <p class="observaciones"><i class="fa fa-pencil-square-o fa-lg">Observaciones</i> {{ calibracion.observaciones|linebreaks }}</p>
         </div>
         <hr>
     {% endfor %}

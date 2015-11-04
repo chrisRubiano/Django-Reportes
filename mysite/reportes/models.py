@@ -1,6 +1,9 @@
 from django.db import models
 from django.utils import timezone
 
+def six_months_from_now():
+    return timezone.now() + timezone.timedelta(days=180)
+
 #Modelo para guardar los reportes de reparacion
 class Reparacion(models.Model):
 	fecha = models.DateField('Fecha', default=timezone.now)
@@ -23,7 +26,7 @@ class Reparacion(models.Model):
 class Calibracion(models.Model):
 	fecha = models.DateField('Fecha', default=timezone.now)
 	cliente = models.CharField('Cliente', max_length=50, null=True)
-	sigCalibracion = models.DateField('Siguiente Calibracion', )
+	sigCalibracion = models.DateField('Siguiente Calibracion', default=six_months_from_now)
 	numeroSerie = models.CharField('Numero de Serie', max_length=36)
 	nombreTecnico = models.CharField('Tecnico responsable', max_length=80)
 	nombreEncargado = models.CharField('Encargado del area', max_length=80)
