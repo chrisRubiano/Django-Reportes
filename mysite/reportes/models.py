@@ -8,6 +8,7 @@ tecnicos = (
         ('Cristian Samaniego', 'Cristian Samaniego'),
         ('Alan Sanchez', 'Alan Sanchez'),
         ('Ivan Coronel', 'Ivan Coronel'),
+        ('Harry Potter','Harry'),
     )
 
 #Modelo para guardar los reportes de reparacion
