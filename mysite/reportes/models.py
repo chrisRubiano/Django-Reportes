@@ -23,7 +23,7 @@ class Reparacion(models.Model):
 
 	class Meta:
 		verbose_name = "Reparacion"
-        verbose_name_plural = "Reparaciones"
+		verbose_name_plural = "Reparaciones"
 
 	def __str__(self):
 		return str(self.fecha)
@@ -42,7 +42,7 @@ class Calibracion(models.Model):
 
 	class Meta:
 		verbose_name = "Calibracion"
-        verbose_name_plural = "Calibraciones"
+		verbose_name_plural = "Calibraciones"
 
 	def __str__(self):
 		return str(self.fecha)
