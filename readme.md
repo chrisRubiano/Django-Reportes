@@ -62,6 +62,7 @@ Desde el panel de administracion podemos agregar, eliminar o editar registros, y
  * Pendiente:
  	+ [Easing][7]
  	+ [WowJS][8]
+ 	+ [AnimateCSS][14]
 
 
 [1]: https://www.python.org/downloads/
@@ -77,3 +78,4 @@ Desde el panel de administracion podemos agregar, eliminar o editar registros, y
 [11]: http://www.ubuntu.com/download/server
 [12]: https://www.python.org/
 [13]: https://www.djangoproject.com/
+[14]: https://daneden.github.io/animate.css/
