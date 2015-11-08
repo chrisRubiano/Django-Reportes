@@ -9,7 +9,7 @@
 
 **********
 
-###Uso:
+###Uso: :wink:
 #####Para correr el servidor entramos a la carpeta mysite en la terminal y utilizamos el siguiente comando:
 
 ```
