@@ -9,7 +9,7 @@
 
 **********
 
-###Uso: :wink:
+###Uso:
 #####Para correr el servidor entramos a la carpeta mysite en la terminal y utilizamos el siguiente comando:
 
 ```
@@ -79,3 +79,4 @@ Desde el panel de administracion podemos agregar, eliminar o editar registros, y
 [12]: https://www.python.org/
 [13]: https://www.djangoproject.com/
 [14]: https://daneden.github.io/animate.css/
+
