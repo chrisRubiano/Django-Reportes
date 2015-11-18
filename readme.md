@@ -1,4 +1,3 @@
-# Trabajo en equipo para la materia de Analisis y Diseño de Sistemas de Información
 ## Sistema de reportes de reparación y calibración 
 ### Paquetes necesarios: 
 
