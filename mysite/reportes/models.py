@@ -6,8 +6,9 @@ def six_months_from_now():
 
 tecnicos = (
         ('Cristian Samaniego', 'Cristian Samaniego'),
-        ('Alan Sanchez', 'Alan Sanchez'),
-        ('Ivan Coronel', 'Ivan Coronel'),
+        ('Esteban Miranda', 'Esteban Miranda'),
+        ('Martin Ruiz', 'Martin Ruiz'),
+        ('Dalia Arvizu','Dalia Arvizu'),
     )
 
 #Modelo para guardar los reportes de reparacion
@@ -18,7 +19,7 @@ class Reparacion(models.Model):
 	nombreTecnico = models.CharField('Tecnico responsable', max_length=80, choices=tecnicos, blank=False, default=tecnicos)
 	nombreEncargado = models.CharField('Encargado del area', max_length=80)
 	observaciones = models.TextField('observaciones', blank=True, null=True)
-	costo = models.DecimalField('Costo (MXN)', max_digits=7, decimal_places=2)
+	costo = models.DecimalField('Costo (MXN)', max_digits=8, decimal_places=2)
 
 	class Meta:
 		verbose_name = "Reparacion"
@@ -37,7 +38,7 @@ class Calibracion(models.Model):
 	nombreTecnico = models.CharField('Tecnico responsable', max_length=80,choices=tecnicos, blank=False, default=tecnicos)
 	nombreEncargado = models.CharField('Encargado del area', max_length=80)
 	observaciones = models.TextField('Observaciones', blank=True, null=True)
-	costo = models.DecimalField('Costo (MXN)', max_digits=7, decimal_places=2)
+	costo = models.DecimalField('Costo (MXN)', max_digits=8, decimal_places=2)
 
 	class Meta:
 		verbose_name = "Calibracion"

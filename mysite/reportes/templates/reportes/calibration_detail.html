@@ -5,7 +5,11 @@
     <div class="reporte">
         
             <div class="date"><i class="fa fa-calendar fa-lg"></i> 
-                {{ calibracion.fecha }}
+               Anterior calibracion: {{ calibracion.fecha }}
+            </div>
+            <div>.</div>
+            <div class="date"><i class="fa fa-calendar fa-lg"></i> 
+               Siguiente calibracion: {{ calibracion.sigCalibracion }}
             </div>
         
         <h2><i class="fa fa-users fa-lg"></i> {{ calibracion.cliente }}</h2>
